@@ -1,0 +1,98 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    vertical-align: top;
+  }
+
+  body{
+    margin: 0px;
+    padding-top: 76px;
+    padding-left: 100px;
+  }
+
+  .grid-container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    background-color:#0000000D;
+  }
+
+  @media (max-width: 1200px){
+    .grid-container{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 800px){
+    .grid-container{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 550px){
+    .grid-container{
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  .video-preview{
+    cursor: pointer;
+  }
+  
+  .video-templet{
+    position: relative;
+    z-index: -1;
+  }
+
+  .video-time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 5px;
+    right: 8px; 
+    padding: 3px 5px;
+    border-radius: 5px;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .inner-grid-container{
+    display: grid;
+    grid-template-columns: 50px 1fr ;
+    padding-top: 10px;
+    column-gap: 10px;
+  }
+
+  .profile-picture{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .video-title{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .name-of-channel,.video-status{
+    color: darkslategray;
+    font-size: 15px;
+  }
+  
+  .name-of-channel{
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+
+

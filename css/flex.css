@@ -1,0 +1,149 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(169, 164, 164);
+    box-shadow:  0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.left-section{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 30px;
+    width: 100px;  
+}
+
+.youtube-logo{
+    height:33px;
+    flex:1;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 20px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    flex:1;
+    height:35px;
+    width:0;
+    font-size: 18px;
+    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(169, 164, 164);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar::placeholder{
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.search{
+    height: 37px;
+    width: 70px;
+    margin-left: -1px;
+    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(169, 164, 164);
+    box-shadow: inset -2px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.search, .voice, .notification-icon, .upload-icon, .grid-icon{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button{
+    height: 23px;
+}
+ 
+.tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search:hover .tooltip,
+.voice:hover .tooltip,
+.notification-icon:hover .tooltip,
+.upload-icon:hover .tooltip,
+.grid-icon:hover .tooltip{
+    opacity: 1;
+}
+
+.voice{
+    margin: 10px;
+    border-style: none;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+
+.voice-button{
+    height: 23px;
+}
+
+.right-section{
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.right-icons{
+    height: 25px
+}
+
+.notification-icon{
+    position: relative;
+}
+
+.num-of-notification{
+    position:absolute;
+    background-color: rgb(202, 3, 3);
+    color: white;
+    font-size: 12px;
+    padding:1px 5px;
+    border-radius: 50%;
+    top:-4px;
+    right: -5px;
+}
+
+.profile{
+    height: 50px;
+    width: 52px;
+    border-radius: 60%;
+    margin-right: 10px;
+}
