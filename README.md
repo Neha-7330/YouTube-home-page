@@ -1,2 +1,2 @@
 # YouTube-home-page
-Used HTML5 &amp; CSS
+View Page : [Click here](https://neha-7330.github.io/YouTube-home-page/)
